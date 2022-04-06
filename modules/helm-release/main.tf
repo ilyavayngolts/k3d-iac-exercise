@@ -1,5 +1,6 @@
 resource "null_resource" "chart" {
   triggers = {
+    name      = var.name
     git_url   = var.git_url
     repo_dir  = local.repo_dir
     chart_dir = var.chart_dir
